@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tech.Care</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav>
+          <div class="logo">
+            <img src="assets/images/TestLogo@2x.png" alt="logo" />
+          </div>
+          <ul>
+            <li class="active">
+              <a href="/overview.html">Overview</a>
+            </li>
+
+            <li>
+              <a href="/patients.html">Patients</a>
+            </li>
+
+            <li>
+              <a href="/schedule.html">Schedule</a>
+            </li>
+
+            <li>
+              <a href="/massage.html">Massage</a>
+            </li>
+
+            <li>
+              <a href="/transaction.html">Tranactions</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Section One contains the side bar -->
+    <section class="one">
+      <div class="flex-conatiner">
+        <div class="side-bar" style="width: 25%">
+          <h3 class="bar-item"></h3>
+          <a href="#" class="bar-item button"></a>
+          <a href="#" class="bar-item button"></a>
+          <a href="#" class="bar-item button"></a>
+        </div>
+        <div class="row">
+          <div class="diagnosis">
+            <h3>Diagnosis History</h3>
+            <canvas class="chart" id="myChart"></canvas>
+          </div>
+          <div class="diagnosis-history">Diagnosis List</div>
+        </div>
+
+        <div class="row">
+          <div class="user_profile">
+            <div id="user_img" class="user_img"></div>
+            <ul id="user"></ul>
+          </div>
+          <div class="profile">
+            Lab Results
+            <h4></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
