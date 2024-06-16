@@ -62,11 +62,61 @@ nav ul li a {
 .diagnosis {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   border-radius: 15px;
-  width: 45rem;
+  width: 47rem;
   height: 70vh;
   margin: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.diagnosis_sub {
+  display: flex;
+}
+.diagnosis_sub_sub {
+  display: flex;
+  margin-left: 5rem;
+  padding-bottom: 1.5;
+}
+.diagnosis_data {
+  width: 10rem;
+  height: fit-content;
+  margin: 7px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.diagnosis_data,
+img,
+small,
+div {
+  margin-left: 9px;
+}
+
+.heart {
+  background-color: #ffe6f1;
+}
+
+.temp {
+  background-color: #ffe6e9;
+}
+
+.resp {
+  background-color: #e0f3fa;
+}
+
+.diagnosis_data img {
+  width: 3rem;
+}
+#sys,
+#dia {
+  list-style: none;
+  margin-right: 10px;
+}
+.canvas {
+  width: 33rem;
+  height: 18rem;
 }
 
 .diagnosis-history {

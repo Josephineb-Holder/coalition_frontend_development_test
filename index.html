@@ -18,23 +18,48 @@
           </div>
           <ul>
             <li class="active">
-              <a href="/overview.html">Overview</a>
+              <a href="/overview.html">
+                <img
+                  src="assets/icons/home_FILL0_wght300_GRAD0_opsz24@2x.png"
+                  alt="home"
+                />Overview</a
+              >
             </li>
 
             <li>
-              <a href="/patients.html">Patients</a>
+              <a href="/patients.html">
+                <img
+                  src="assets/icons/group_FILL0_wght300_GRAD0_opsz24@2x.png"
+                  alt="logo"
+                />Patients</a
+              >
             </li>
 
             <li>
-              <a href="/schedule.html">Schedule</a>
+              <a href="/schedule.html">
+                <img
+                  src="assets/icons/calendar_today_FILL0_wght300_GRAD0_opsz24@2x.png"
+                  alt="logo"
+                />Schedule</a
+              >
             </li>
 
             <li>
-              <a href="/massage.html">Massage</a>
+              <a href="/massage.html">
+                <img
+                  src="assets/icons/chat_bubble_FILL0_wght300_GRAD0_opsz24@2x.png"
+                  alt="logo"
+                />Massage</a
+              >
             </li>
 
             <li>
-              <a href="/transaction.html">Tranactions</a>
+              <a href="/transaction.html">
+                <img
+                  src="assets/icons/credit_card_FILL0_wght300_GRAD0_opsz24@2x.png"
+                  alt="logo"
+                />Transactions</a
+              >
             </li>
           </ul>
         </nav>
@@ -52,9 +77,44 @@
         <div class="row">
           <div class="diagnosis">
             <h3>Diagnosis History</h3>
-            <canvas class="chart" id="myChart"></canvas>
+            <div class="diagnosis_sub">
+              <div class="canvas">
+                <canvas class="chart" id="myChart"></canvas>
+              </div>
+              <div class="analysis">
+                <div id="systolic"><ul id="sys"></ul></div>
+                <div id="diatonic"><ul id="dia"></ul></div>
+              </div>
+            </div>
+            <div class="diagnosis_sub_sub">
+              <div class="diagnosis_data resp">
+                <img
+                  src="assets/icons/respiratory rate@2x.png"
+                  alt="respiratpry"
+                  srcset=""
+                />
+                <small>Respiratory Rate</small>
+                <div id="respiratory"></div>
+              </div>
+              <div class="diagnosis_data temp">
+                <img
+                  src="assets/icons/temperature@2x.png"
+                  alt="temperature"
+                  srcset=""
+                />
+                <small>Temperature</small>
+                <div id="temperature"></div>
+              </div>
+              <div class="diagnosis_data heart">
+                <img src="assets/icons/HeartBPM@2x.png" alt="" srcset="" />
+                <small>Heart Rate</small>
+                <div id="heart_rate"></div>
+              </div>
+            </div>
           </div>
-          <div class="diagnosis-history">Diagnosis List</div>
+          <div class="diagnosis-history" id="diagnosis_list">
+            Diagnosis List
+          </div>
         </div>
 
         <div class="row">
